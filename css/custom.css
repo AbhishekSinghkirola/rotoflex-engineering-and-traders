@@ -1,0 +1,24 @@
+.mega-drop-menu {
+  width: 95%;
+  left: 2.5%;
+  box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.05),
+    -2px 0px 5px 1px rgba(0, 0, 0, 0.05);
+  margin-top: 10px;
+  visibility: hidden;
+  opacity: 0;
+  transform-origin: top;
+  transform: scaleY(0);
+  transition: all 500ms ease;
+}
+
+.mega-drop:hover .mega-drop-menu {
+  visibility: visible;
+  opacity: 1;
+  transform: scaleY(1);
+}
+
+.first-logo>a::before {
+  display: none !important;
+  width: 0 !important;
+  background-color: transparent !important;
+}
